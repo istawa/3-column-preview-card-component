@@ -1,0 +1,169 @@
+html, body{
+    margin: 0;
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    height: auto;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Lexend Deca';
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.split{
+    width: 300px;
+    height: auto;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    padding: 3em;
+}
+
+.container > img{
+    width: 64px; 
+    height: 40px;
+}
+
+.container > p{
+    max-width: 13em;
+    line-height: 1.5em;
+    color: hsl(0, 0%, 100%, 0.75);
+}
+
+.container > h1{
+    color: hsl(0, 0%, 95%);
+    font-weight: 700;
+    font-family: var(--ff-accent);
+}
+
+.sedan{
+    width: 100%;
+    height: auto;
+    border-radius: 2% 2% 0 0 ;
+    background-color: hsl(31, 77%, 52%);;
+}
+
+.suv{
+    width: 100%;
+    height: auto;
+    background-color: hsl(184, 100%, 22%);
+}
+
+.lux{
+    width: 100%;
+    height: auto;
+    border-radius: 0 0 2% 2%;
+    background-color: hsl(179, 100%, 13%);
+}
+
+.container > a:link, .container > a:visited{
+    border: hsl(0, 0%, 95%);
+    border-width: 2px;
+    height: 35px;
+    width: 120px;
+    border-radius: 40px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.container > a > p{
+    margin-top: 7px;
+}
+
+.sedan > .container > a:link, .sedan > .container > a:visited{
+    color: hsl(31, 77%, 52%);
+}
+
+.suv > .container > a:link, .suv > .container > a:visited{
+    color: hsl(184, 100%, 22%);
+}
+
+.lux > .container > a:link, .lux > .container > a:visited{
+    color: hsl(179, 100%, 13%);
+}
+
+.sedan > .container > a:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+}
+
+.suv > .container > a:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+}
+
+.lux > .container > a:hover{
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);;
+}
+
+@media (min-width: 1440px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 957px;
+    }
+
+    .split{
+        width: 900px;
+        flex-direction: row;
+    }
+
+    .sedan{
+        width: 35rem;
+        height: 32rem;
+        border-radius: 2% 0 0 2%;
+    }
+    
+    .suv{
+        width: 35rem;
+        height: 32rem;
+        height: auto;
+    }
+    
+    .lux{
+        width: 35rem;
+        height: 32rem;
+        height: auto;
+        border-radius: 0 2% 2% 0;
+    }
+
+    .container > h1{
+        font-size: 35px;
+        padding-top: 1.4rem;
+    }
+
+    .container > p{
+        max-width: 15em;
+    }
+
+    .container{
+        position: relative;
+    }
+
+    .container > a{
+        position: absolute;
+        bottom: -85px;
+    }
+
+    .lux > .container > a{
+        bottom: -83px;
+    }
+}
