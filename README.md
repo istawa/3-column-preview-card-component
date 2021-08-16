@@ -43,7 +43,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Links
 
 - Solution URL: [See solution URL here](https://github.com/istawa/3-column-preview-card-componen)
-- Live Site URL: [See live site URL here](https://your-live-site-url.com)
+- Live Site URL: [See live site URL here](https://611a5aa103e9ff842821f5b7--modest-golick-113bf1.netlify.app)
 
 ## My process
 
